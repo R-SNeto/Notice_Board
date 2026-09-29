@@ -44,4 +44,5 @@ otimizando o fluxo de informações sobre atividades pendentes, com controle de 
 | RN08 | A edição/exclusão de um aviso não gera reenvio de e-mail aos alunos                                                                  |
 | RN09 | O perfil de administrador (desenvolvedor) possui acesso irrestrito à gestão da plataforma                                            |
 
-
+### Diagrama de Classes
+![class_diagram](models_images/NoticeBoard.drawio.png)
