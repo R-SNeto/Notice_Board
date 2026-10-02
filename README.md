@@ -45,4 +45,4 @@ otimizando o fluxo de informações sobre atividades pendentes, com controle de 
 | RN09 | O perfil de administrador (desenvolvedor) possui acesso irrestrito à gestão da plataforma                                            |
 
 ### Diagrama de Classes
-![class_diagram](models_images/NoticeBoard.drawio.png)
+![class_diagram](models_images/NoticeBoard.jpg)
