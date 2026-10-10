@@ -10,6 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.InheritanceType;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Size;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -23,8 +24,16 @@ public abstract class User implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Size(min = 3, max = 150, message = "Invalid size, must have a size between 3 and 150 characters")
+    @Column(nullable = false)
     private String name;
+
+    @Size(min = 3, max = 150, message = "Invalid size, must have a size between 3 and 150 characters")
+    @Column(nullable = false, unique = true)
     private String email;
+
+    @Size(min = 4, max = 255, message = "Invalid size, must have a size between 4 and 255 characters")
+    @Column(nullable = false)
     private String password;
 
     public User() {

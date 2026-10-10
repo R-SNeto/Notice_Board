@@ -1,5 +1,6 @@
 package com.github.r_sneto.NoticeBoard.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -17,6 +18,8 @@ public class Classroom implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(nullable = false)
     private String name;
     private LocalDate startDate;
     private LocalDate endDate;
@@ -24,10 +27,10 @@ public class Classroom implements Serializable {
     public Classroom() {
     }
 
-    public Classroom(Long id, String name, LocalDate startDate, LocalDate endDate) {
+    public Classroom(Long id, String name, LocalDate endDate) {
         this.id = id;
         this.name = name;
-        this.startDate = startDate;
+        this.startDate = LocalDate.now();
         this.endDate = endDate;
     }
 

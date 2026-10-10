@@ -1,14 +1,16 @@
 package com.github.r_sneto.NoticeBoard.entity;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.DiscriminatorValue;
 import jakarta.persistence.Entity;
 
 import java.io.Serializable;
 
 @Entity
-@DiscriminatorValue("Teacher")
+@DiscriminatorValue("teacher")
 public class Teacher extends User implements Serializable {
 
+    @Column(nullable = false, unique = true)
     private String registry;
 
     public Teacher() {
