@@ -10,7 +10,7 @@ import java.io.Serializable;
 @DiscriminatorValue("student")
 public class Student extends User implements Serializable {
 
-    @Column(nullable = false, unique = true)
+    @Column(unique = true)
     private String enrollment;
 
     public Student() {
