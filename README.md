@@ -46,3 +46,6 @@ otimizando o fluxo de informações sobre atividades pendentes, com controle de 
 
 ### Diagrama de Classes
 ![class_diagram](models_images/NoticeBoard.jpg)
+
+### Diagrama Entidade-Relacionamento
+![entity-relationship_diagram](models_images/ERD.png)
