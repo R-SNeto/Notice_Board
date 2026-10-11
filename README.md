@@ -31,7 +31,6 @@ Oferecer ao usuário um quadro pessoal de avisos com data limite, funcionando co
 | RF17 | O sistema deve retornar, em cada aviso, informações auxiliares como tempo restante até o prazo ou tempo de atraso. |
 | RF18 | O sistema deve continuar sinalizando como "atrasado" todo aviso vencido e não concluído, até que seja marcado como concluído, permitindo ao front-end gerar o retorno visual. |
 | RF19 | O sistema deve permitir que o usuário configure a antecedência do alerta (ex.: 1 dia, 3 horas) por aviso ou como preferência geral. |
-| RF20 | *(Opcional)* O sistema deve enviar lembretes por email quando um aviso entrar na janela de antecedência configurada. |
 
 ## Regras de Negócio (RN)
 
